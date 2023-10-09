@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="tem-converter">
+
+            <div class="time-icon">
+                <p id="time">00:00:00</p>
+                <div>
+                    <i class="fa-solid fa-wifi"></i>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <i class="fa-solid fa-battery-full"></i>
+                </div>
+            </div>
+
+            <h1 class="title-txt"><i class="fa-solid fa-temperature-low"></i> Temperature Converter</h1>
+
+            <div class="tem-body">
+                <div class="tem-input">
+                    <label for="degree" >Degrees</label>
+                    <input type="number"  id="degree" placeholder="Enter Degree" required />
+                </div>
+
+                <div class="tem-type">
+                    <label for="temp-option">Select type</label>
+                    <select name="temperature" id="temp-option">
+                        <option value="fahrenheit" id="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin" id="kelvin">Kelvin</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="result">
+                <p class="result-title">Result (Celsius)</p>
+                <h2 class="celsius-value" id="celsius" ></h2>
+            </div>
+
+            <button type="button" id="convert-btn" onclick="convertIntocelsius()">Convert</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- js -->
+    <script src="main.js"></script>
+
+</body>
+</html>
